@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import Slider from '../components/Slider/home-two'
 import About from '../components/About/home-two'
 import Services from '../components/Services'
-import Features from '../components/Features'
+// import Features from '../components/Features'
 import Testimonial from "../components/Testimonials/home-two";
 import Team from "../components/Team/home-two";
 import Blog from "../components/Blog";
@@ -22,13 +22,13 @@ const HomeTwo = () => {
             <Slider/>
             <About/>
             <Services/>
-            <Features classes="sp-top"/>
+            {/* <Features classes="sp-top"/> */}
             <Testimonial/>
-            <Team/>
-            <Blog/>
-            <BrandLogo/>
-            <Funfact/>
-            <CallToAction/>
+            {/* <Team/> */}
+            {/* <Blog/> */}
+            {/* <BrandLogo/> */}
+            {/* <Funfact/> */}
+            {/* <CallToAction/> */}
             <Footer/>
             <LoginRegister/>
             <MobileMenu/>

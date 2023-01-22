@@ -24,37 +24,37 @@ import ScrollToTop from "./helpers/ScrollToTop";
 
 const App = () => {
     return (
-        // <Router>
-        //     <ScrollToTop>
-        //         <Switch>
-        //             <Route exact path={`${process.env.PUBLIC_URL + '/'}`} component={Demo}/>
-        //             <Route exact path={`${process.env.PUBLIC_URL + '/home-one'}`} component={HomeOne}/>
-        //             <Route exact path={`${process.env.PUBLIC_URL + '/home-two'}`} component={HomeTwo}/>
-        //             <Route exact path={`${process.env.PUBLIC_URL + '/services'}`} component={Service}/>
-        //             <Route path={`${process.env.PUBLIC_URL + '/service/:serviceID'}`} component={ServiceDetails}/>
-        //             <Route exact path={`${process.env.PUBLIC_URL + "/blog-grid-right-sidebar"}`}
-        //                    component={BlogGridRightSidebar}/>
-        //             <Route exact path={`${process.env.PUBLIC_URL + "/blog-grid-left-sidebar"}`}
-        //                    component={BlogGridLeftSidebar}/>
-        //             <Route exact path={`${process.env.PUBLIC_URL + "/blog-grid-without-sidebar"}`}
-        //                    component={BlogGridWithoutSidebar}/>
-        //             <Route exact path={`${process.env.PUBLIC_URL + "/blog-list-left-sidebar"}`}
-        //                    component={BlogListLeftSidebar}/>
-        //             <Route exact path={`${process.env.PUBLIC_URL + "/blog-list-right-sidebar"}`}
-        //                    component={BlogListRightSidebar}/>
-        //             <Route path={`${process.env.PUBLIC_URL + "/blog/:blogID"}`} component={BlogDetailsPage}/>
-        //             <Route exact path={`${process.env.PUBLIC_URL + "/team"}`} component={Team}/>
-        //             <Route path={`${process.env.PUBLIC_URL + "/team-member/:teamID"}`} component={TeamDetails}/>
-        //             <Route exact path={`${process.env.PUBLIC_URL + "/about"}`} component={About}/>
-        //             <Route exact path={`${process.env.PUBLIC_URL + "/contact"}`} component={Contact}/>
-        //             <Route exact component={Error404}/>
-        //         </Switch>
-        //     </ScrollToTop>
-        // </Router>
         <Router>
-        <HomeTwo/>
-
+            <ScrollToTop>
+                <Switch>
+                    {/* <Route exact path={`${process.env.PUBLIC_URL + '/'}`} component={Demo}/> */}
+                    {/* <Route exact path={`${process.env.PUBLIC_URL + '/home-one'}`} component={HomeOne}/> */}
+                    <Route exact path={`${process.env.PUBLIC_URL + '/home-two'}`} component={HomeTwo}/>
+                    <Route exact path={`${process.env.PUBLIC_URL + '/services'}`} component={Service}/>
+                    <Route path={`${process.env.PUBLIC_URL + '/service/:serviceID'}`} component={ServiceDetails}/>
+                    {/* <Route exact path={`${process.env.PUBLIC_URL + "/blog-grid-right-sidebar"}`}
+                           component={BlogGridRightSidebar}/>
+                    <Route exact path={`${process.env.PUBLIC_URL + "/blog-grid-left-sidebar"}`}
+                           component={BlogGridLeftSidebar}/>
+                    <Route exact path={`${process.env.PUBLIC_URL + "/blog-grid-without-sidebar"}`}
+                           component={BlogGridWithoutSidebar}/>
+                    <Route exact path={`${process.env.PUBLIC_URL + "/blog-list-left-sidebar"}`}
+                           component={BlogListLeftSidebar}/>
+                    <Route exact path={`${process.env.PUBLIC_URL + "/blog-list-right-sidebar"}`}
+                           component={BlogListRightSidebar}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/blog/:blogID"}`} component={BlogDetailsPage}/>
+                    <Route exact path={`${process.env.PUBLIC_URL + "/team"}`} component={Team}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/team-member/:teamID"}`} component={TeamDetails}/>
+                    <Route exact path={`${process.env.PUBLIC_URL + "/about"}`} component={About}/>
+                    <Route exact path={`${process.env.PUBLIC_URL + "/contact"}`} component={Contact}/> */}
+                    <Route exact component={Error404}/>
+                </Switch>
+            </ScrollToTop>
         </Router>
+        // <Router>
+        // <HomeTwo/>
+
+        // </Router>
     );
 };
 

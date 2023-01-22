@@ -3,7 +3,7 @@ import SectionTitle from '../UI/SectionTitle'
 import ServiceItem from  './ServiceItem'
 import ServicesData from '../../data/Services/services'
 
-import serviceTopBg from '../../assets/img/service/service-bg.jpg'
+import serviceTopBg from '../../assets/img/service/service-bg2.jpg'
 
 function Services({classes}) {
     return (
@@ -12,7 +12,7 @@ function Services({classes}) {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-xl-5 m-auto text-center">
-                            <SectionTitle variant="light" title="خدمات ما" heading="ما راه پیشرفت شما را هموار می کنیم" />
+                            <SectionTitle variant="light" heading="بهترین کادورو از بهترین جا بگیر" />
                         </div>
                     </div>
                 </div>
