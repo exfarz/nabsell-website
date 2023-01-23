@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from api.api import Sliderdata
+from api.api import Sliderdata,aboutdata
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('Sliderdata/', Sliderdata),
+    path('AboutData/', aboutdata),
 
 ]

@@ -21,7 +21,7 @@ const HomeTwo = () => {
             <Header/>
             <Slider/>
             <About/>
-            <Services/>
+            {/* <Services/> */}
             {/* <Features classes="sp-top"/> */}
             <Testimonial/>
             {/* <Team/> */}
