@@ -32,10 +32,10 @@ function Footer() {
                     <div className="col-md-4 col-lg-2 ml-auto">
                         <Widget title="اطلاعات">
                             <List classes="widget-list">
-                                <LI><Link to={`${process.env.PUBLIC_URL + "/about"}`}>شرکت ما</Link></LI>
-                                <LI><Link to={`${process.env.PUBLIC_URL + "/contact"}`}>تماس با ما</Link></LI>
-                                <LI><Link to={`${process.env.PUBLIC_URL + "/services"}`}>خدمات ما</Link></LI>
-                                <LI><Link to={`${process.env.PUBLIC_URL + "/"}`}>فرصت های شغلی</Link></LI>
+                                <LI><Link to={`${process.env.PUBLIC_URL + "/businex"}`}>شرکت ما</Link></LI>
+                                <LI><Link to={`${process.env.PUBLIC_URL + "/businex"}`}>تماس با ما</Link></LI>
+                                <LI><Link to={`${process.env.PUBLIC_URL + "/businex"}`}>خدمات ما</Link></LI>
+                                <LI><Link to={`${process.env.PUBLIC_URL + "/businex"}`}>فرصت های شغلی</Link></LI>
                             </List>
                         </Widget>
                     </div>
@@ -43,10 +43,10 @@ function Footer() {
                     <div className="col-md-4 col-lg-2 ml-auto">
                         <Widget title="شبکه های اجتماعی">
                             <List classes="widget-list">
-                                <LI><Link to="https://facebook.com/ghaemomidi/" target={'_blank'}>فیسبوک</Link></LI>
-                                <LI><Link to="https://twitter.com/ghaemomidi/" target={'_blank'}>توییتر</Link></LI>
-                                <LI><Link to="https://dribbble.com/ghaemomidi/" target={'_blank'}>دریبل</Link></LI>
-                                <LI><Link to="https://www.instagram.com/ghaemomidi/" target={'_blank'}>اینستاگرام</Link></LI>
+                                <LI><Link to="#" target={'_blank'}>فیسبوک</Link></LI>
+                                <LI><Link to="#" target={'_blank'}>توییتر</Link></LI>
+                                <LI><Link to="#" target={'_blank'}>دریبل</Link></LI>
+                                <LI><Link to="#" target={'_blank'}>اینستاگرام</Link></LI>
                             </List>
                         </Widget>
                     </div>

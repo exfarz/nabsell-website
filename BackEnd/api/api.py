@@ -5,6 +5,7 @@ from django.http import HttpResponse
 
 from model.Sliderdatas import Slider
 from model.about import about
+from model.testimonials import testimo
 
 
 @api_view()
@@ -28,6 +29,23 @@ def aboutdata(request):
                 "about-2.jpg"
                 )
 
-
     l = [obj]
+    return HttpResponse(json.dumps(l, default=lambda o: o.__dict__), content_type='application/json')
+
+
+@api_view()
+def Testimonials(request):
+    obj = testimo(1, "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+                  "کاربر 1", "testimonial/h-2-t-01.png"
+
+                  )
+    obj2 = testimo(2, "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+                   "کاربر 2", "testimonial/h-2-t-02.png"
+                   )
+    obj3 = testimo(3, "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+                   "کاربر 3", "testimonial/h-2-t-03.png"
+
+                   )
+
+    l = [obj, obj2, obj3]
     return HttpResponse(json.dumps(l, default=lambda o: o.__dict__), content_type='application/json')
