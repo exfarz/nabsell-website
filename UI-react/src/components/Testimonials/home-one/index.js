@@ -45,12 +45,12 @@ function Testimonials() {
         <div className="testimonial-area bg-offwhite sp-y sm-top">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 m-auto text-center">
+                    {/* <div className="col-lg-6 m-auto text-center">
                         <SectionTitle
                             title="دیدگاه متشریان"
                             heading="مشتریان ما چه می گویند؟"
                         />
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="row align-items-center">
@@ -61,7 +61,7 @@ function Testimonials() {
                                     Testimonials.map(testimonial => (
                                         <div key={testimonial.id}>
                                             <TestimonialItem
-                                                author={testimonial.author}
+                                                // author={testimonial.author}
                                                 authorThumb={testimonial.authorThumb}
                                                 quote={testimonial.quote}
                                             />
