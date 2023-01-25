@@ -67,7 +67,7 @@
 // Section Margin
 .sm-top {
   margin-top: 110px;
-
+padding-bottom: 110px;
   @media #{$md-device} {
     margin-top: 90px;
   }

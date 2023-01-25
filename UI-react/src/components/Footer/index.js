@@ -4,7 +4,7 @@ import Widget from "../UI/Widget";
 import List from "../UI/List";
 import LI from "../UI/List/Item";
 import {Link} from "react-router-dom";
-import Logo from '../../assets/img/logo-dark.png'
+import Logo from '../../assets/img/logo2.png'
 
 function Footer() {
     return (
@@ -14,16 +14,16 @@ function Footer() {
                     <div className="col-lg-4 order-4 order-lg-0">
                         <div className="widget-item">
                             <div className="about-widget">
-                                <Link to={`${process.env.PUBLIC_URL + "/"}`}>
+                                <Link to={`${process.env.PUBLIC_URL + "/nabsell"}`}>
                                     <img src={Logo} alt="Logo"/>
                                 </Link>
 
                                 <Text>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                   فروشگاه آنلایل نابسل برای ایرانیان عزیز.
                                 </Text>
 
                                 <Text classes="copyright-txt">
-                                    کپی رایت {new Date().getFullYear()} &copy; فارسی شده توسط <a href="https://www.rtl-theme.com/author/i-vira">قائم امیدی</a>
+                                    کپی رایت {new Date().getFullYear()} &copy; ساخته شده توسط گروه<a href="#">EXFARZ</a>
                                 </Text>
                             </div>
                         </div>
@@ -32,10 +32,8 @@ function Footer() {
                     <div className="col-md-4 col-lg-2 ml-auto">
                         <Widget title="اطلاعات">
                             <List classes="widget-list">
-                                <LI><Link to={`${process.env.PUBLIC_URL + "/businex"}`}>شرکت ما</Link></LI>
-                                <LI><Link to={`${process.env.PUBLIC_URL + "/businex"}`}>تماس با ما</Link></LI>
-                                <LI><Link to={`${process.env.PUBLIC_URL + "/businex"}`}>خدمات ما</Link></LI>
-                                <LI><Link to={`${process.env.PUBLIC_URL + "/businex"}`}>فرصت های شغلی</Link></LI>
+                                <LI><Link to={`${process.env.PUBLIC_URL + "/contact"}`}>تماس با ما</Link></LI>
+                                <LI><Link to={`${process.env.PUBLIC_URL + "/about"}`}>خدمات ما</Link></LI>
                             </List>
                         </Widget>
                     </div>
@@ -54,8 +52,7 @@ function Footer() {
                     <div className="col-md-4 col-lg-3">
                         <Widget title="تماس با ما">
                             <address>
-                                تهران، خیابان آزادی <br/>
-                                http://rtl-theme.com <br/>
+                                زنجان، خیابان فردوسی<br/>
                                 09120000000
                             </address>
                         </Widget>

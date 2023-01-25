@@ -11,18 +11,27 @@
     position: relative;
 
     &:last-child {
-      margin-left: 0;
+      margin-left: 20px;
     }
 
     & > a {
       color: $white;
       display: block;
+      font-size: 20px;
+      text-shadow: 0 0 5px #b48a24;
+
       line-height: 1;
       position: relative;
 
       @media #{$lg-device} {
         font-size: 14px;
       }
+    }:hover{
+      transition: 80ms;
+      text-shadow: 0 0 10px rgb(255, 255, 255);
+      color: black;   
+      font-size: 25px;
+
     }
 
     // Sub Menu
@@ -33,7 +42,7 @@
 
       // Menu Item Arrows
       &:after {
-        color: $white;
+        color: rgb(75, 75, 75);
         content: '\f107';
         font-size: 16px;
         line-height: 1;

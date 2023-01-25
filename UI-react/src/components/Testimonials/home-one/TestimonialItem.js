@@ -5,12 +5,12 @@ function TestimonialItem(props) {
     return (
         <div className="testimonial-item testimonial-item--3">
             <div className="testimonial-thumb">
-                <img src={require('../../../assets/img/' + props.authorThumb)} alt="بیزنکس"/>
+                {/* <img src={require('../../../assets/img/' + props.authorThumb)}/> */}
             </div>
 
             <div className="testimonial-txt">
-                <img src={quoteIcon} alt="بیزنکس"/>
-                <p>{props.quote}</p>
+                {/* <img src={quoteIcon}/> */}
+                <p className='slider-content text-center'>{props.quote}</p>
                 <h5 className="client-name">{props.author}</h5>
             </div>
         </div>

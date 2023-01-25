@@ -10,13 +10,17 @@ from model.testimonials import testimo
 
 @api_view()
 def Sliderdata(request):
-    obj = Slider(1, "قالب ری اکت شرکتی",
-                 "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
-                 "slider/h-2-01.jpg", "اطلاعات بیشتر", "/about")
-    obj2 = Slider(2, "پول خود را هدر ندهید",
-                  "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
-                  "slider/h-2-02.jpg", "اطلاعات بیشتر", "/about")
-    l = [obj, obj2]
+    obj = Slider(1, "مواد خوراکی",
+                 "تازه ترین سبزیجات و مواد خوراکی",
+                 "slider/h-2-04.jpg", "اطلاعات بیشتر", "/about")
+    obj2 = Slider(2, "پوشاک",
+                  "بهترین و با کیفیت ترین لباس های روز بازار.",
+                  "slider/h-2-03.jpg", "اطلاعات بیشتر", "/about")
+    obj3 = Slider(3, "لوازم الکتریکی",
+                  "خرید ساده ارزان و مطمئن از ما",
+                  "slider/h-2-05.jpg", "اطلاعات بیشتر", "/about")
+
+    l = [obj, obj2, obj3]
     return HttpResponse(json.dumps(l, default=lambda o: o.__dict__), content_type='application/json')
 
 
@@ -26,7 +30,7 @@ def aboutdata(request):
                 "در خصوص کتاب، لوازم گیمینگ، لوازم ورزشی، آشپزی و ... نیاز شمارا فراهم میکنیم !!",
                 "اطلاعات بیشتر",
                 "/about",
-                "about-2-bg.png"
+                "about-2-bg22.jpg"
                 )
 
     l = [obj]
@@ -35,14 +39,14 @@ def aboutdata(request):
 
 @api_view()
 def Testimonials(request):
-    obj = testimo(1, "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
-                  "کاربر 1", "testimonial/h-2-t-01.png"
+    obj = testimo(1, "گیمینگ",
+                  "کاربر 1", "testimonial/h-2-t-011.png"
 
                   )
-    obj2 = testimo(2, "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+    obj2 = testimo(2, "ورزشی",
                    "کاربر 2", "testimonial/h-2-t-02.png"
                    )
-    obj3 = testimo(3, "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+    obj3 = testimo(3, "پوشاک",
                    "کاربر 3", "testimonial/h-2-t-03.png"
 
                    )

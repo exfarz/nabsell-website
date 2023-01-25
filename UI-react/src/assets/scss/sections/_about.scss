@@ -6,6 +6,8 @@
   @media #{$xl-device} {
     margin-right: 55px;
     padding-left: 80px;
+    padding-right: 20px;
+
   }
 
   h6 {
@@ -84,7 +86,7 @@
   }
 
   &--2{
-    margin-left: -250px;
+    margin-left: -25px;
   }
 }
 
@@ -93,10 +95,11 @@
 .home-two-about-area{
   padding-top: 72px;
   background-color: $offWhite;
-  //background-image: url('../img/about-2-bg.jpg');
+  background-image: url('/src/assets/img/about-2-bgg.jpg');
   background-position: center left;
   background-repeat: no-repeat;
-
+  margin-top: 110px;
+  padding-bottom: 110px;
   @media #{$lg-device, $xlmax-device} {
     background-size: 1100px auto;
   }
@@ -108,14 +111,19 @@
   .about-content{
     padding-top: 100px;
     padding-bottom: 110px;
-
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px #484848;
     @media #{$md-device} {
       padding-top: 40px;
       padding-bottom: 90px;
+      box-shadow: 0px 0px 0px #484848;
+
     }
 
     @media #{$sm-device} {
       padding-bottom: 60px;
+      box-shadow: 0px 0px 0px #484848;
+
       padding-top: 0;
     }
   }
