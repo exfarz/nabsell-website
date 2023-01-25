@@ -9,7 +9,7 @@ const ContactInfo = ({address}) => {
                     <span dangerouslySetInnerHTML={{__html: address}}/>
                 </address>
             </div>
-            <div className="member-social-icons mt-30">
+            {/* <div className="member-social-icons mt-30">
                 {
                     socialNetworks.map(social=>(
                         <a key={social.id} href={`https://${social.networkName}.com/${social.username}`} target="_blank" rel="noopener noreferrer">
@@ -17,7 +17,7 @@ const ContactInfo = ({address}) => {
                         </a>
                     ))
                 }
-            </div>
+            </div> */}
         </Fragment>
     );
 };

@@ -20,7 +20,14 @@
   }
 
   &-content {
-    font-size: 16px;
+    text-shadow:-1px 0px 0px rgb(34, 34, 34),
+    1px 0px 0px rgb(34, 34, 34),
+    0px -1px 0px rgb(34, 34, 34),
+    0px 1px 0px rgb(34, 34, 34),
+    0 0 10px rgb(255, 255, 255);
+    
+
+    font-size: 20px;
     font-weight: 500;
     margin: auto;
 

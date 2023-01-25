@@ -20,7 +20,7 @@ const ContactPage = () => {
                                 <div className="contact-info-con">
                                     <h3>اطلاعات تماس</h3>
                                     <ContactInfo
-                                        address="تهران، خیابان آزادی <br/>http://rtl-theme.com <br/>09120000000"
+                                        address="زنجان<br/>09120000000"
                                     />
                                 </div>
                             </div>

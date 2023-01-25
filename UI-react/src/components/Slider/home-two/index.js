@@ -97,7 +97,7 @@ const PrevArrow = ({className, onClick}) => {
     };
     return (
         
-        <div className={'slider-area slider-area--2'}>
+        <div className={'slider-area slider-area--2'} >
             <SlickSlider settings={settings}>
                 {
                    slider.map(item => (
@@ -110,7 +110,7 @@ const PrevArrow = ({className, onClick}) => {
                                             <div className="slider-content slider-content--2 light">
                                                 <h2>{parse(item.title)}</h2>
                                                 <p className="m-auto">{parse(item.text)}</p>
-                                                <Link to={`${process.env.PUBLIC_URL + item.btnLink}`} className="btn btn-brand">{item.btnText}</Link>
+                                                {/* <Link to={`${process.env.PUBLIC_URL + item.btnLink}`} className="btn btn-brand">{item.btnText}</Link> */}
                                             </div>
                                         </div>
                                     </div>
