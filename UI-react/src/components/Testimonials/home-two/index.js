@@ -3,6 +3,10 @@ import Slider from "react-slick";
 import testimonialData from '../../../data/Testimonials/home-two'
 import quote from '../../../assets/img/icons/quote.png'
 import SectionTitle from "../../UI/SectionTitle";
+import tes from '../../../data/Testimonials/tes'
+import $ from "jquery";
+import { useState, useEffect } from "react";
+// import Testimonials from "../home-one";
 
 const NextArrow = ({className, onClick}) => {
     return <button className={className} onClick={onClick}><i className="fa fa-long-arrow-left"/></button>
@@ -10,17 +14,58 @@ const NextArrow = ({className, onClick}) => {
 
 const PrevArrow = ({className, onClick}) => {
     return <button className={className} onClick={onClick}><i className="fa fa-long-arrow-right"/></button>
-};
+};    
+     function Tes () {
+        
+    const [Testimonials,setTestimonials]=React.useState([]);
+
+        useEffect(()=>{
+            var settings = {
+                "url": "http://127.0.0.1:8000/TestimonialsData/",
+                "method": "GET",
+                "timeout": 0,
+              };
+              
+              $.ajax(settings).done(function (response) {
+                console.log(response);
+                setTestimonials(response)
+                
+                
+              });   
+              
+            }, []);
+            return Testimonials
+    }
 
 class Testimonial extends Component {
     constructor(props) {
         super(props);
         this.state = {
             nav1: null,
-            nav2: null
+            nav2: null,
+            dataa:Tes
         };
     }
+    // data(){
+    //     const [Testimonials,setTestimonials]=React.useState([]);
 
+    //     useEffect(()=>{
+    //         var settings = {
+    //             "url": "http://127.0.0.1:8000/TestimonialsData/",
+    //             "method": "GET",
+    //             "timeout": 0,
+    //           };
+              
+    //           $.ajax(settings).done(function (response) {
+    //             console.log(response);
+    //             setTestimonials(response)
+                
+                
+    //           });   
+              
+    //         }, []);
+            
+    // }
     componentDidMount() {
         this.setState({
             nav1: this.slider1,
@@ -39,6 +84,7 @@ class Testimonial extends Component {
         };
 
         return (
+            
             <div className="testimonial-area testimonial-area--2 bg-offwhite sm-top">
                 <div className="container">
                     <div className="row d-lg-none">
@@ -54,6 +100,7 @@ class Testimonial extends Component {
                     <div className="row align-items-center">
                         <div className="col-md-5">
                             <Slider
+                            
                                 asNavFor={this.state.nav2}
                                 ref={slider => (this.slider1 = slider)}
                                 arrows={false}

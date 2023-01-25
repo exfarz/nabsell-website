@@ -32,7 +32,7 @@ const About = () => {
                     <div className="row align-items-center">
                         <div className="col-12 d-lg-none">
                             <figure className="about-thumb">
-                                <img src={require('../../../assets/img/' + item.thumb)} alt="Businex-About"/>
+                                <img src={require('../../../assets/img/' + item.thumb)} alt="nabsell-About"/>
                             </figure>
                         </div>
 

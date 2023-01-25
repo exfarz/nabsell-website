@@ -8,16 +8,17 @@ $fa-icon: 'FontAwesome';
 $paragraph: #151515;
 $headingColor: #151515;
 $ashColor: #aaaaaa;
-$borderColor: #eee;
-$hvrColor: #182141;
+$borderColor: #ffffcc;
+$hvrColor: #333333;
 
 //== Site Brand Color
-$brandColor: #080b1a;
+$brandColor: #006080
+;
 $brandColorDark: darken($brandColor, 15%);
 $brandColorLight: lighten($brandColor, 15%);
 
 //== Alternative Color
-$white: #FFFFFF;
+$white: #c5c5c5;
 $offWhite: #f8f9fc;
 $black: #000000;
 $blackSoft: #222222;

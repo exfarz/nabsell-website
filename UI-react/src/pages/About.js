@@ -20,9 +20,9 @@ const PageAbout = () => {
         <Fragment>
             <Header/>
             <PageHeader
-                bgImg={require('../assets/img/page-header.jpg')}
+                bgImg={require('../assets/img/page-header2.jpg')}
                 title="درباره ما"
-                content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است."
+                content="مرکز فروش با بهترین کیفیت و نادر ترین قیمت ."
             />
             <About
                 title={'تیم ما'}
@@ -30,15 +30,15 @@ const PageAbout = () => {
                 thumb={ServiceThumb}
                 content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است."
             />
-            <Services/>
+            {/* <Services/>
             <Features classes={'sm-top'}/>
             <Testimonial/>
             <Team/>
             <BrandLogo/>
             <Funfact classes="sp-top"/>
-            <CallToAction/>
+            <CallToAction/> */}
             <Footer/>
-            <LoginRegister/>
+            {/* <LoginRegister/> */}
             <MobileMenu/>
         </Fragment>
     );

@@ -5,7 +5,7 @@ import Slider from '../components/Slider/home-two'
 import About from '../components/About/home-two'
 import Services from '../components/Services'
 // import Features from '../components/Features'
-import Testimonial from "../components/Testimonials/home-two";
+import Testimonial from "../components/Testimonials/home-one";
 import Team from "../components/Team/home-two";
 import Blog from "../components/Blog";
 import BrandLogo from "../components/BrandLogo";
@@ -30,7 +30,7 @@ const HomeTwo = () => {
             {/* <Funfact/> */}
             {/* <CallToAction/> */}
             <Footer/>
-            <LoginRegister/>
+            {/* <LoginRegister/> */}
             <MobileMenu/>
         </Fragment>
     );

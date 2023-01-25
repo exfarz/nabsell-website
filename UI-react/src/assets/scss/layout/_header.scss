@@ -4,8 +4,9 @@
 
 .header-area{
   background-color: $brandColor;
-  padding: 30px 0;
-  transition: 0.4s;
+  padding: 20px 0;
+  transition: 2s;
+  box-shadow: 5px 0px 10px;
 
   &.sticky{
     animation: slideInDown 0.6s forwards;
@@ -52,6 +53,7 @@
     }
 
     .main-menu{
+      
       & > li{
 
         &.has-submenu{
@@ -79,6 +81,7 @@
 
 // Index Action
 .header-action{
+
   color: $white;
   font-size: 22px;
 

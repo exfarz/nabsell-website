@@ -17,22 +17,22 @@ const PageTeam = () => {
         <Fragment>
             <Header/>
             <PageHeader
-                bgImg={require('../assets/img/page-header.jpg')}
+                bgImg={require('../assets/img/page-header2.jpg')}
                 title="اطلاعاتی درباره تیم ما"
-                content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است."
+                content="نابسل با گروهی متخصص و فعال."
             />
             <About
-                title={'تیم ما'}
-                heading="اعضای متخصص ما را بشناسید"
+                title={''}
+                heading={'تیم ما'}
                 thumb={ServiceThumb}
-                content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است."
+                content="بسته بندی خاص توسط حرفییا"
             />
-            <TeamMember/>
-            <BrandLogo/>
+            {/* <TeamMember/> */}
+            {/* <BrandLogo/>
             <Funfact classes="sp-top"/>
-            <CallToAction/>
+            <CallToAction/> */}
             <Footer/>
-            <LoginRegister/>
+            {/* <LoginRegister/> */}
             <MobileMenu/>
         </Fragment>
     );

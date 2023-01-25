@@ -14,8 +14,8 @@ function HeaderConfig(props) {
 
     return (
         <div className="header-action mt-lg-3 text-right">
-            <a href="tel:09120000000" className="tel-no">0912999####</a>
-            <button onClick={LoginRegHandler} className="btn-cog"><i className="fa fa-cog"/></button>
+            {/* <a href="tel:09120000000" className="tel-no">0912999####</a> */}
+            {/* <button onClick={LoginRegHandler} className="btn-cog"><i className="fa fa-cog"/></button> */}
             <button onClick={MobileMenuHandler} className="btn-menu d-lg-none"><i className="fa fa-bars"/></button>
         </div>
     );

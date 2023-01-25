@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from api.api import Sliderdata,aboutdata
+from api.api import Sliderdata,aboutdata,Testimonials
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('Sliderdata/', Sliderdata),
     path('AboutData/', aboutdata),
+    path('TestimonialsData/', Testimonials),
 
 ]

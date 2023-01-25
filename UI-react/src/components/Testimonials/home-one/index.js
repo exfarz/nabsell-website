@@ -4,8 +4,28 @@ import SectionTitle from "../../UI/SectionTitle"
 
 import TestimonialData from '../../../data/Testimonials/home-one'
 import SlickSlider from "../../UI/Slick";
+import $ from "jquery";
+import { useState, useEffect } from "react";
 
 function Testimonials() {
+        const [Testimonials,setTestimonials]=React.useState([]);
+
+        useEffect(()=>{
+            var settings = {
+                "url": "http://127.0.0.1:8000/TestimonialsData/",
+                "method": "GET",
+                "timeout": 0,
+              };
+              
+              $.ajax(settings).done(function (response) {
+                console.log(response);
+                setTestimonials(response)
+                
+                
+              });   
+              
+            }, []);
+
     const settings = {
         slidesToShow: 2,
         arrows: false,
@@ -25,12 +45,12 @@ function Testimonials() {
         <div className="testimonial-area bg-offwhite sp-y sm-top">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 m-auto text-center">
+                    {/* <div className="col-lg-6 m-auto text-center">
                         <SectionTitle
                             title="دیدگاه متشریان"
                             heading="مشتریان ما چه می گویند؟"
                         />
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="row align-items-center">
@@ -38,10 +58,10 @@ function Testimonials() {
                         <div className="testimonial-content-wrap m-0 pl-0">
                             <SlickSlider settings={settings}>
                                 {
-                                    TestimonialData.map(testimonial => (
+                                    Testimonials.map(testimonial => (
                                         <div key={testimonial.id}>
                                             <TestimonialItem
-                                                author={testimonial.author}
+                                                // author={testimonial.author}
                                                 authorThumb={testimonial.authorThumb}
                                                 quote={testimonial.quote}
                                             />

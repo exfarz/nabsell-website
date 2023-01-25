@@ -8,7 +8,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $white;
+    color: black;
+    text-shadow: 0px 1px 10px;
 
     @media #{$md-device} {
       height: 400px;
